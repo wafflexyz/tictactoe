@@ -1,0 +1,110 @@
+<html>
+    <header>
+        <link rel="stylesheet" href="style.css">
+        <h1 id="title">Tic Tac Toe</h1>
+            <ul id="nav">
+                <li>
+                    <button type="button" class="buttons" id="newGameBtn">
+                        New Game
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="buttons" id="resetGameBtn">
+                        Reset Game
+                    </button>
+                </li>
+            </ul>
+    </header>
+
+    <body>
+
+        <div id="startUpWrapper">
+                <div id="startUpWindow">
+                    <div><span id="matchupInfo" class="chooseText">Player vs. Player</span></div>
+                    
+                    <div id="boxedInfo">
+                        <p id="startUpInfo" class="chooseText">Choose to play:</p>
+                        <div id="chooseEnemy">
+                            <div id="startUpBtns">
+                                <button type="button" class="buttons" id="vsPlayerBtn">
+                                    vs. Player
+                                </button>
+            
+                                <button type="button" class="buttons" id="vsAIBtn" disabled>
+                                    vs. AI
+                                </button>
+                            </div>
+        
+                        </div>
+        
+                        <div id="chooseSymbol">
+                            <div id="chooseSymbolBtns">
+                                <div class="infoBox">
+                                    <button type="button" id="chooseX" class="symbol">
+                                        X
+                                    </button>
+                                </div>
+            
+                                <div class="infoBox">
+                                    <button type="button" id="chooseO" class="symbol">
+                                        O
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    
+                    
+                </div>
+        </div>
+
+        <div id="mainGameWindow">
+            <span id="winText">Player won!</span>
+
+            <div id="game">
+
+                <div class="infoBox">
+                    <span id="playerNameInfo">Player</span>
+                    <span id="playerSymbolInfo" class="symbol">X</span>
+                </div>
+            
+
+                <div id="gameBoard">
+                    <button type="button" class="cell" id="cell0" 
+                        data-index-number="00"></button>
+                    <button type="button" class="cell" id="cell1" 
+                        data-index-number="01"></button>
+                    <button type="button" class="cell" id="cell2" 
+                        data-index-number="02"></button>
+
+                    <button type="button" class="cell" id="cell3" 
+                        data-index-number="10"></button>
+                    <button type="button" class="cell" id="cell4" 
+                        data-index-number="11"></button>
+                    <button type="button" class="cell" id="cell5" 
+                        data-index-number="12"></button>
+
+                    <button type="button" class="cell" id="cell6" 
+                        data-index-number="20"></button>
+                    <button type="button" class="cell" id="cell7" 
+                        data-index-number="21"></button>
+                    <button type="button" class="cell" id="cell8" 
+                        data-index-number="22"></button>
+                </div>
+
+                <div class="infoBox">
+                    <span id="enemyNameInfo">AI</span>
+                    <span id="enemySymbolInfo" class="symbol">O</span>
+                </div>
+            
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+
+</html>

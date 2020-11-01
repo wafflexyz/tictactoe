@@ -1,0 +1,237 @@
+html {
+    font-family: "Segoe UI";
+    color: white;
+}
+
+body {
+    background-color: rgb(21, 32, 43);
+}
+
+/*
+rgb(21, 32, 43) - (Bluer) Dark Blue, Twitter Background
+#151E29 Dark Blue, Background
+#1B2737 Lighter Dark Blue, Navbar?
+#1D8DEE - Blue, Text Color (Links)
+White - Status, Text
+*/
+
+header {
+    box-sizing: border-box;
+    border: 1px solid #a2a2a2;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+
+    padding-left: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    font-size: 40px;
+    font-weight: bold;
+    color: inherit;
+
+    text-align: center;
+    padding-left: 10px;
+}
+
+#nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+li {
+    display: inline;
+    float: left;
+    margin: 0 5px;
+}
+
+.buttons {
+    background-color: inherit;
+    color:  #1D8DEE;
+    box-shadow: none;
+    width: 140px;
+    height: 40px;
+    margin-top: 10px;
+
+    border: solid #1D8DEE;
+    border-radius: 50px;
+    border-width: 2px;
+
+    font-size: .99em;
+    font-weight: bold;
+
+    outline: none;   
+}
+
+.buttons:hover {
+    cursor:pointer;
+    background-color: #233244;
+}
+
+/*
+Start Up CSS
+*/
+
+/* #textStartUpWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+#matchupInfo {
+    display: none;
+    font-size: xx-large;
+}
+
+#boxedInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chooseText {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#startUpWindow {
+    height: 82%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#chooseEnemy {
+    display: block;
+}
+
+#chooseSymbol {
+    display: none;
+}
+
+#chooseSymbolBtns {
+    display: flex;
+}
+
+#chooseX, #chooseO {
+    height: inherit;
+    width: inherit;
+    background-color: inherit;
+
+    border: 0px;
+    outline: none;
+}
+
+#chooseX:hover, #chooseO:hover {
+    background-color: #233244;
+}
+
+
+
+
+
+/*
+Game Window
+*/
+
+#mainGameWindow {
+    display: none;
+}
+
+#winText {
+    margin-top: 20px;
+
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+#game {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 82%;
+    width: 100%;
+}
+
+.infoBox {
+    height: 180px;
+    width: 180px;
+
+    font-weight: bold;
+
+    border: 1px solid #a2a2a2;
+    border-radius: 5px;
+
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.symbol {
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(189, 187, 187);
+}
+
+
+#gameBoard {
+    height: 700px;
+    width: 700px;
+
+    border: 10px solid rgb(87, 86, 86);
+    
+    background-color:rgb(88, 88, 88);
+    
+
+    display: grid;
+    grid-template-columns: repeat(3, calc((700px - 20px) / 3));
+    grid-template-rows: repeat(3, calc((700px - 20px) / 3));
+    gap: 10px;
+}
+
+
+.cell {
+    border: none;
+    
+    background-color:  #151E29;
+    color: rgb(189, 187, 187);
+
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+
+}
+
+.cell:hover {
+    background-color: #233244;
+}
+
+/* Applied with Javascript by changing the name of the class
+*/
+.removeHover {
+    pointer-events: none;
+}
+
+
